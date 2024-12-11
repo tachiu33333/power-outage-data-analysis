@@ -107,8 +107,9 @@ Similarly to what i said in the introduction, we are going to predict how many c
 For the baseline model, I started really simple. I wanted to make sure it worked but most of all, it function with some pieces at a time. The columns i used for the x values were 'CAUSE.CATEGORY','YEAR', 'U.S._STATE', 'OUTAGE.DURATION', and 'DEMAND.LOSS.MW'. The y-value was 'CUSTOMERS.AFFECTED'. There was one ordinal feature('YEAR'), two nominal('CAUSE.CATEGORY', 'U.S._STATE'), and two quantitiative('OUTAGE.DURATION', 'DEMAND.LOSS.MW'). We did one hot enconding for the nominal feature and ordinal feature, and imputed the rest with means to help standardize the data. From there, we predicted and found that the MAE (Mean Absolute Error) was a whopping 71126.29 while RMSE was 176131.5. The r-squared was also really low, at about 0.215. Already, this was looking pretty bad but compared to when it had less features, I say it had a growing potental.
 
 ## Final Model: ##
-
+For the final model, I made some extra changes. For a start, I added 'POPPCT_URBAN' and 'POPPCT_UC' and removed 'YEAR'. 'POPPCT_URBAN' and 'POPPCT_UC' are nominal data. I already wanted to put urban and uc column during the first model but I also wanted something simple that woudl work. The reason for the column's inclusion is because I have felt that it matters what percentage are in urbanized area where large group of people and customers would most likely be. I also used a GridSearchCV to help boost the hyperparameters of the RandomForestRegressor. At the end, I would say my final model did a lot better than my baseline model with a lower RMSE of 164434.481 and a higher R-squared of 0.316.
 
 
 
 ## Fairness Analysis: ##
+For the fairness analysis, I had an rmse of 125655.259 and a p-value of 1. It meant I agree with the null value and accept that the difference in outage duration is not significantly different.
