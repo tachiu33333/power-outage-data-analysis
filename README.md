@@ -63,7 +63,7 @@ This graph was trying to see between population and Customers that were afffecte
 <iframe
   src="Asset/pivot_table.html"
   width="800"
-  height="600"
+  height="300"
   frameborder="0"
 ></iframe>
 
@@ -112,4 +112,4 @@ For the final model, I made some extra changes. For a start, I added 'POPPCT_URB
 
 
 ## Fairness Analysis: ##
-For the fairness analysis, I had an rmse of 125655.259 and a p-value of 1. It meant I agree with the null value and accept that the difference in outage duration is not significantly different.
+For the fairness analysis, I tested to see if outage duration of long and short were significantly different. Null hypothesis is if they were the same where as alternative is they are significantly different. Outage duration counts as long if it is greater or equal to the median while shorter is less than the median. I had an rmse of 125655.259 and a p-value of 1. It means I have to agree with the null value and accept that the difference in outage duration is not significantly different.
