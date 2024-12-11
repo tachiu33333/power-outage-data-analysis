@@ -41,7 +41,7 @@ The excel sheet came with 1540 rows and 57 columns in total because it also incl
 ## Univariate Analysis: ##
 
 <iframe
-  src="frequency-cause.html"
+  src="Asset/frequency-cause.html"
   width="800"
   height="600"
   frameborder="0"
@@ -51,7 +51,7 @@ This one is where I tried to figure out the number of each cause and get a feel 
 
 ## Bivariate Analysis: ##
 <iframe
-  src="customer_pop.html"
+  src="Asset/customer_pop.html"
   width="800"
   height="600"
   frameborder="0"
@@ -61,7 +61,7 @@ This graph was trying to see between population and Customers that were afffecte
 
 ## Interesting Aggregate: ##
 <iframe
-  src="pivot_table.html"
+  src="Asset/pivot_table.html"
   width="800"
   height="600"
   frameborder="0"
@@ -76,7 +76,7 @@ The column 'DEMAND.LOSS.MW' was mentioned on the site that these data are either
 
 ## Missingness Depenedacy: ##
 <iframe
-  src="ks.html"
+  src="Asset/ks.html"
   width="800"
   height="600"
   frameborder="0"
